@@ -40,5 +40,10 @@ export class AppComponent {
     type==='plus' ? this.count++ : this.count--
     
   }
+
+  //style
+  title3 = 'styling'
 }
+
+
 
