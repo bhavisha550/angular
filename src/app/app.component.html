@@ -1,3 +1,4 @@
+<!--start basic-->
 <app-todo-list></app-todo-list>
 
 <app-login></app-login>
@@ -10,12 +11,13 @@
 
 <app-login></app-login>
 
+<!--events-->
 <button (click)="getName('isha')">Click me!</button>
 <br  />
 <button (click)="getData('hello.!')">call</button>
 <br  />
 <input type = "text" #box (keyup)="getData(box.value)" placeholder="event keyup" />
-<br  />
+<br  /><br   />
 <input type = "text" #box2 (keydown)="getData(box2.value)" placeholder="event keydown" />
 <br  />
 
@@ -26,3 +28,9 @@
 <p>
     value is: {{displayVal}}
 </p>
+
+<!--counter-->
+<h1>{{ title2 }}</h1>
+<button (click)="counter('minus')">--</button> 
+<p>Count: {{count}}</p>
+<button (click)="counter('plus')">++</button>

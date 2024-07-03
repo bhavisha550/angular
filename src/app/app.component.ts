@@ -22,6 +22,7 @@ export class AppComponent {
 
   title = 'my-app';
   displayVal='';
+  // events
   getName(val:any) {
     console.warn(val)
     this.displayVal=val
@@ -30,4 +31,14 @@ export class AppComponent {
   {
     console.warn(val)
   }
+
+  //counter
+  title2 = 'counter';
+  count = 0
+  counter(type:string)
+  {
+    type==='plus' ? this.count++ : this.count--
+    
+  }
 }
+
