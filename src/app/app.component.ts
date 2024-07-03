@@ -43,6 +43,11 @@ export class AppComponent {
 
   //style
   title3 = 'styling'
+
+
+  //property binding
+  name = "joy"
+  disable=false;
 }
 
 

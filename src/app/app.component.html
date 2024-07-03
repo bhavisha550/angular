@@ -42,3 +42,8 @@
         color:blueviolet;
     }
 </style>
+
+<!--property binding-->
+<input type="text" name="user-name" value={{name}} disabled="{{disable}}" >  <!--interpolation-->
+<br   /> <br   />
+<input type="text" name="user-name" [value]=name [disabled]=disable >    <!--property binding-->
