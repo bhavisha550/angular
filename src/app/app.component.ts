@@ -21,4 +21,13 @@ export class AppComponent {
   
 
   title = 'my-app';
+  displayVal='';
+  getName(val:any) {
+    console.warn(val)
+    this.displayVal=val
+  }
+  getData(val:string)
+  {
+    console.warn(val)
+  }
 }

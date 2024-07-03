@@ -9,3 +9,20 @@
 <app-country-list></app-country-list>
 
 <app-login></app-login>
+
+<button (click)="getName('isha')">Click me!</button>
+<br  />
+<button (click)="getData('hello.!')">call</button>
+<br  />
+<input type = "text" #box (keyup)="getData(box.value)" placeholder="event keyup" />
+<br  />
+<input type = "text" #box2 (keydown)="getData(box2.value)" placeholder="event keydown" />
+<br  />
+
+<h1 (mouseover)="getData('over')">working with angular</h1>
+<br   /><br   />
+<input type="text" #box  placeholder="enter your name" name = "name" />
+<button (click)="getName(box.value)"> clicksss</button>
+<p>
+    value is: {{displayVal}}
+</p>
