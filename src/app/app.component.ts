@@ -63,7 +63,27 @@ export class AppComponent {
   //title7= 'switch-case'
   //color = "red"
 
-  
+  //for loop
+  // title8 = 'for loop'
+  // users = ['isha', 'abc', 'xyz', 'sam', 'joy']
+  // userDetails=[
+  //   {name:'isha',email:'isha@some.com', phone:'27238729'},
+  //   {name:'abc',email:'abc@some.com', phone:'73782929'},
+  //   {name:'xyz',email:'xyz@some.com', phone:'67354829'},
+  //   {name:'sam',email:'sam@some.com', phone:'34257729'},
+  //   {name:'joy',email:'joy@some.com', phone:'60238729'}
+  // ];
+
+
+  //nested for loop
+  // title9 = 'nested for loop'
+  // users=[
+  //     {name:'isha',email:'isha@some.com', phone:'27238729', social:['facebook','insta', 'snap']},
+  //     {name:'abc',email:'abc@some.com', phone:'73782929', social:['insta', 'snap']},
+  //     {name:'xyz',email:'xyz@some.com', phone:'67354829', social:['facebook', 'snap']},
+  //     {name:'sam',email:'sam@some.com', phone:'34257729', social:['facebook','insta', ]},
+  //     {name:'joy',email:'joy@some.com', phone:'60238729', social:['facebook','insta', 'snap', 'linkedin']}
+  // ];
 }
 
 
