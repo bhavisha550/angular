@@ -44,6 +44,36 @@
 </style>
 
 <!--property binding-->
+<h1> {{title4}} </h1>
 <input type="text" name="user-name" value={{name}} disabled="{{disable}}" >  <!--interpolation-->
 <br   /> <br   />
 <input type="text" name="user-name" [value]=name [disabled]=disable >    <!--property binding-->
+
+<!-- if-else -->
+<!-- <h1> {{title5}} </h1>
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <h1>If Condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>esle condition</h1>
+</ng-template> -->
+
+<!-- multiple conditions -->
+<!-- <h1> {{title6}} </h1>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color:red">RED color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color:green">GREEN color</h1>
+</ng-template> -->
+
+<!--switchcase-->
+<!-- <h1> {{title7}} </h1>
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color:red;" >RED color</h1>
+    <h1 *ngSwitchCase="'green'" style="color:green;" >GREEN color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color:blue;" >BLUE color</h1>
+    <h1 *ngSwitchCase="'voilet'" style="color:violet;" >VOILET color</h1>
+    <h1 *ngSwitchDefault="'red'"  >UNKNOWN color</h1>
+</div> -->

@@ -5,7 +5,7 @@ import { LoginComponent } from './patient/login/login.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
-
+import { CommonModule } from '@angular/common';
 
 
 
@@ -46,8 +46,24 @@ export class AppComponent {
 
 
   //property binding
+  title4 = 'property binding'
   name = "joy"
   disable=false;
+
+  //if-else
+  //title5 = 'if-else'
+  //show=true
+
+  //multiple conditions
+  //title6 = 'else-if'
+  // color="red";
+  //color="green";
+
+  //switch-case
+  //title7= 'switch-case'
+  //color = "red"
+
+  
 }
 
 
