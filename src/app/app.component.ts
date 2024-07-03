@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './patient/login/login.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
