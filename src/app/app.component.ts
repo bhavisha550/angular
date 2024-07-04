@@ -63,7 +63,7 @@ export class AppComponent {
 
   //switch-case
   title7= 'switch-case'
-  color1 = "red"
+  color1 = "green"
 
   //for loop
   title8 = 'for loop'
@@ -86,6 +86,17 @@ export class AppComponent {
       {name:'sam',email:'sam@some.com', phone:'34257729', social:['facebook','insta', ]},
       {name:'joy',email:'joy@some.com', phone:'60238729', social:['facebook','insta', 'snap', 'linkedin']}
   ];
+
+  //style binding
+  title10 = 'style binding';
+  color2 = "orange"
+  bgcolor="red"
+
+  updateColor()
+  {
+    this.color2="pink"
+    this.bgcolor="skyblue"
+  }
 }
 
 
