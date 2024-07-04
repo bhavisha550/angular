@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
-import { LoginComponent } from './patient/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
 import { CommonModule, NgSwitchDefault } from '@angular/common';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -15,7 +16,7 @@ import { CommonModule, NgSwitchDefault } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, StudentListComponent, CountryListComponent, CommonModule],
+  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, StudentListComponent, CountryListComponent, CommonModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -97,6 +98,9 @@ export class AppComponent {
     this.color2="pink"
     this.bgcolor="skyblue"
   }
+
+  //heading
+  title11 = 'header component'
 }
 
 
