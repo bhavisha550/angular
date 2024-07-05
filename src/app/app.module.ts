@@ -3,6 +3,8 @@ import { BrowserModule } from "@angular/platform-browser";
 import { PatientModule } from "./patient/patient.module"
 import { AppComponent } from "./app.component";
 import {FormsModule} from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -10,7 +12,8 @@ import {FormsModule} from '@angular/forms';
     imports: [
         BrowserModule,
         PatientModule,
-        FormsModule
+        FormsModule,
+        NgbModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -114,6 +114,10 @@ export class AppComponent {
   toggle() {
     this.shows=!this.shows;
   }
+
+  //bootstrap
+  title14 = 'bootstrap'
+  
 }
 
 
