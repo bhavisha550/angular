@@ -103,9 +103,9 @@
  
 
 
-<!-- basic form -->
+<!-- basic form  -->
 <!-- <h1> {{title12}}</h1>
-<form #Enrollment="ngForm" (ngSubmit)="getInfo(Enrollment)">
+ <form #Enrollment="ngForm" (ngSubmit)="getInfo(Enrollment)"> 
 
     <input type="text" ngModel name="patient" placeholder="enter patient name" />
     <br/><br/>
@@ -115,11 +115,11 @@
     <br/><br/>
     <button>Register</button>
     <br/> 
-</form> -->
+</form>  -->
 
 
 <!--toggle element-->
-<h1> {{title13}} </h1>
+<!-- <h1> {{title13}} </h1>
 <button (click)="toggle()">Toggle</button>
 <div *ngIf="shows">
     Heading tag
@@ -127,12 +127,16 @@
     <h1>supp.?</h1>
     <h1>bye</h1>
 </div>
-<br/>
+<br/> -->
 
-<!--bootstrap (library or framework)--> 
-<!-- <h1> {{title14}} </h1>
-<p>
-    <ngb-alert [dismissible]="false">
-        <strong>Warning!</strong> Check yourself.
-    </ngb-alert>
-</p> -->
+<!--to-do-list-->
+<h1> {{title15}} </h1>
+<input type="text" placeholder="enter task" #task />
+<br/><br/>
+<button (click)="addTask(task.value)">Add Task</button>
+<br/><br/>
+<ul *ngFor="let some of list">
+    <li> {{some.fullName}} <button (click)="removeTask(some.id)">Remove</button></li>
+</ul>
+
+

@@ -117,7 +117,20 @@ export class AppComponent {
 
   //bootstrap
   title14 = 'bootstrap'
-  
+
+  //to-do list
+  title15 = 'To-do List'
+  list:any[]=[];
+  addTask(some:string)
+  {
+    this.list.push({id:this.list.length, fullName:some});
+    console.warn(this.list);
+  }
+  removeTask(id:number)
+  {
+    console.warn(id)
+    this.list=this.list.filter(some=>some.id!==id)
+  }
 }
 
 
