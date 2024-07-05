@@ -101,10 +101,10 @@
 <h1 [style.color]="color2" [style.backgroundColor]="bgcolor"> {{title10}} </h1>
 <button (click)="updateColor()">Update Color</button>
  
-has context menu
+
 
 <!-- basic form -->
-<h1> {{title12}}</h1>
+<!-- <h1> {{title12}}</h1>
 <form #Enrollment="ngForm" (ngSubmit)="getInfo(Enrollment)">
 
     <input type="text" ngModel name="patient" placeholder="enter patient name" />
@@ -115,4 +115,15 @@ has context menu
     <br/><br/>
     <button>Register</button>
     <br/> 
-</form>
+</form> -->
+
+
+<!--toggle element-->
+<h1> {{title13}} </h1>
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="shows">
+    Heading tag
+    <h1>Hello</h1>
+    <h1>supp.?</h1>
+    <h1>bye</h1>
+</div>

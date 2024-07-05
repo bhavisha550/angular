@@ -107,6 +107,13 @@ export class AppComponent {
   {
     console.warn(info)
   }
+
+  //toggle
+  title13 = 'toggle element'
+  shows = true;
+  toggle() {
+    this.shows=!this.shows;
+  }
 }
 
 
