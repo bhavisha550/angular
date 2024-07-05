@@ -6,6 +6,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { CommonModule, NgSwitchDefault } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import {NgForm} from '@angular/forms';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -15,7 +16,7 @@ import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent ],
+  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent, ChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -130,6 +131,15 @@ export class AppComponent {
   {
     console.warn(id)
     this.list=this.list.filter(some=>some.id!==id)
+  }
+
+
+  //child to parent
+  title16 = 'child to parent'
+  someData = 10;
+  updateChild()
+  {
+    this.someData=Math.floor(Math.random()*10)
   }
 }
 
