@@ -1,22 +1,18 @@
-<!-- header component-->
+<!-- header component -->
 <app-header></app-header>
-
-
+ 
+ 
 <h1> {{title11}} </h1>
-
+ 
 <!--start basic-->
 <app-todo-list></app-todo-list>
-
+ 
 <app-login></app-login>
-
+ 
 <app-user-list></app-user-list>
-
-<app-student-list></app-student-list>
-
-<app-country-list></app-country-list>
-
+ 
 <app-login></app-login>
-
+ 
 <!--events-->
 <button (click)="getName('isha')">Click me!</button>
 <br  />
@@ -26,7 +22,7 @@
 <br  /><br   />
 <input type = "text" #box2 (keydown)="getData(box2.value)" placeholder="event keydown" />
 <br  />
-
+ 
 <h1 (mouseover)="getData('over')">working with angular</h1>
 <br   /><br   />
 <input type="text" #box  placeholder="enter your name" name = "name" />
@@ -34,13 +30,13 @@
 <p>
     value is: {{displayVal}}
 </p>
-
+ 
 <!--counter-->
 <h1>{{ title2 }}</h1>
-<button (click)="counter('minus')">--</button> 
+<button (click)="counter('minus')">--</button>
 <p>Count: {{count}}</p>
 <button (click)="counter('plus')">++</button>
-
+ 
 <!--style-->
 <h1 class="heading"> {{ title3 }}</h1>
 <style>
@@ -48,13 +44,13 @@
         color:blueviolet;
     }
 </style>
-
+ 
 <!--property binding-->
 <h1> {{title4}} </h1>
 <input type="text" name="user-name" value={{name}} disabled="{{disable}}" >  <!--interpolation-->
 <br   /> <br   />
 <input type="text" name="user-name" [value]=name [disabled]=disable >    <!--property binding-->
-
+ 
 <!-- if-else -->
 <h1> {{title5}} </h1>
 <h1 *ngIf="show; then ifBlock else elseBlock"></h1>
@@ -64,7 +60,7 @@
 <ng-template #elseBlock>
     <h1>esle condition</h1>
 </ng-template>
-
+ 
 <!-- multiple conditions -->
 <h1> {{title6}} </h1>
 <ng-template [ngIf]="color==='red'">
@@ -73,7 +69,7 @@
 <ng-template [ngIf]="color==='green'">
     <h1 style="color:green">GREEN color</h1>
 </ng-template>
-
+ 
 <!--switchcase-->
 <h1> {{title7}} </h1>
 <div [ngSwitch]="color1">
@@ -84,12 +80,12 @@
     <h1 *ngSwitchCase="'voilet'" style="color:violet;" >VOILET color</h1>
     <h1 *ngSwitchDefault>UNKNOWN color</h1>
 </div>
-
+ 
 <!--for loop-->
 <h1> {{title8}} </h1>
 <h3 *ngFor="let user of users" > Name is {{user}}.!</h3>
 <h3 *ngFor="let detail of userDetails" >  {{detail.name}} -- {{detail.email}} -- {{detail.phone}}</h3>
-
+ 
 <!--nested for loop-->
 <h1> {{title9}} </h1>
 <ul *ngFor="let user1 of users1">
@@ -100,11 +96,25 @@
         <li>{{account}}</li>
     </ul>
 </ul>
-
+ 
 <!--style binding....dynamic styling-->
 <h1 [style.color]="color2" [style.backgroundColor]="bgcolor"> {{title10}} </h1>
 <button (click)="updateColor()">Update Color</button>
+ 
+has context menu
 
+<!-- basic form -->
+<h1> {{title12}}</h1>
+<form #Enrollment="ngForm" (ngSubmit)="getInfo(Enrollment)">
 
+    <input type="text" ngModel name="patient" placeholder="enter patient name" />
+    <br/><br/>
+    <input type="text" ngModel name="measure" placeholder="enter measure" />
+    <br/><br/>
+    <input type="text" ngModel name="password" placeholder="enter your passwords" />
+    <br/><br/>
+    <button>Register</button>
+    <br/>
+</form>
 
 
