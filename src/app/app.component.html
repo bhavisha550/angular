@@ -150,3 +150,8 @@
 <ul *ngFor="let user of userData">
     <app-user-list [use]="user"></app-user-list>  <!--child component-->
 </ul>
+
+
+<!-- child to parent -->
+<h1>{{d}}</h1>
+<app-patient (updateItemEvent)="updateItem($event)"></app-patient>

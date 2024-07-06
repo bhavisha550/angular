@@ -7,6 +7,7 @@ import { CommonModule, NgSwitchDefault } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import {NgForm} from '@angular/forms';
 import { ChildComponent } from './child/child.component';
+import { PatientComponent } from './patient/patient.component';
 
 
 
@@ -16,7 +17,7 @@ import { ChildComponent } from './child/child.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent, ChildComponent],
+  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent, ChildComponent, PatientComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -151,6 +152,17 @@ export class AppComponent {
     {userName: 'Roy', emailAddress: 'roy@gmail.com'},
 
   ]
+
+
+  //child to parent
+  title18 = 'Child to Parent'
+  d="x"
+  updateItem(i:string)
+  {
+    console.warn(i);
+    this.d="i"
+  }
+
 }
 
 
