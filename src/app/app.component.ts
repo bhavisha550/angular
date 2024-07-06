@@ -163,6 +163,11 @@ export class AppComponent {
     this.d="i"
   }
 
+  //two way binding
+  title19 = 'two way binding'
+  person:any;
+
+  
 }
 
 
