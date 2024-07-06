@@ -162,3 +162,8 @@
  <!-- <h1>{{title19}}</h1>
  <input type="text" [(ngModel)]="person"/>
  <h3>{{person}}</h3> -->
+
+<!-- template reference variable -->
+<h1>{{title20}}</h1>
+<input type="text" #dem placeholder="enter some value"/>
+<button (click)="getVal(dem.value)">Call function</button>

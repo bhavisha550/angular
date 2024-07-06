@@ -164,10 +164,15 @@ export class AppComponent {
   }
 
   //two way binding
-  title19 = 'two way binding'
-  person:any;
+  // title19 = 'two way binding'
+  // person:any;
 
-  
+  //template reference variable
+  title20 = 'Template Reference Variable'
+  getVal(valz:any)
+  {
+    console.log(valz)
+  }
 }
 
 
