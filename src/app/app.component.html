@@ -9,9 +9,7 @@
  
 <app-login></app-login>
  
-<app-user-list></app-user-list>
- 
-<app-login></app-login>
+
  
 <!--events-->
 <button (click)="getName('isha')">Click me!</button>
@@ -140,7 +138,15 @@
 </ul>
 
 
-<!-- child to parent  -->
+<!-- parent to child  -->
 <h1> {{title16}} </h1>
 <app-child [someItem]="someData"></app-child>
 <button (click)="updateChild()">Update Child Component</button>
+<br/>
+
+
+<!-- resusing component -->
+<h1> {{title17}} </h1>
+<ul *ngFor="let user of userData">
+    <app-user-list [use]="user"></app-user-list>  <!--child component-->
+</ul>

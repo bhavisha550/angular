@@ -134,13 +134,23 @@ export class AppComponent {
   }
 
 
-  //child to parent
-  title16 = 'child to parent'
+  //parent to child
+  title16 = 'parent to child'
   someData = 10;
   updateChild()
   {
     this.someData=Math.floor(Math.random()*10)
   }
+
+  //reusing component
+  title17 = 'Reusing component.!'
+  userData = [
+    {userName: 'Isha', emailAddress: 'isha@gmail.com'},
+    {userName: 'Thomas', emailAddress: 'thomas@gmail.com'},
+    {userName: 'Bhaskar', emailAddress: 'bhaskar@gmail.com'},
+    {userName: 'Roy', emailAddress: 'roy@gmail.com'},
+
+  ]
 }
 
 
