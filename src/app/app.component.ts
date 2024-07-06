@@ -173,6 +173,11 @@ export class AppComponent {
   {
     console.log(valz)
   }
+
+  //pipes
+  title21 = 'Angular Basic Pipes'
+  today = Date()
+
 }
 
 

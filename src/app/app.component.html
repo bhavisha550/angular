@@ -167,3 +167,11 @@
 <h1>{{title20}}</h1>
 <input type="text" #dem placeholder="enter some value"/>
 <button (click)="getVal(dem.value)">Call function</button>
+<br/><br/>
+
+
+<!-- pipes -->
+<h1>{{title21 | uppercase}}</h1>
+<h1>{{title21 | lowercase}}</h1>
+<h1>{{title21}}</h1>
+<h2>{{today | date : 'fullDate'}}</h2>
