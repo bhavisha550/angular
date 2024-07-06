@@ -177,7 +177,10 @@ export class AppComponent {
   //pipes
   title21 = 'Angular Basic Pipes'
   today = Date()
-
+  using = {
+    n:'isha',
+    ag:22
+  }
 }
 
 
