@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {NgForm} from '@angular/forms';
 import { ChildComponent } from './child/child.component';
 import { PatientComponent } from './patient/patient.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -17,7 +18,7 @@ import { PatientComponent } from './patient/patient.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent, ChildComponent, PatientComponent],
+  imports: [RouterOutlet , TodoListComponent, LoginComponent,UserListComponent, CommonModule, HeaderComponent, ChildComponent, PatientComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -187,6 +188,15 @@ export class AppComponent {
 
   //directives
   title23 = 'Directives'
+
+  //services
+  // title24 = 'Services In Angular'
+  // memberData=[
+  //   {pName:'abc', measureSelected:'IMA'},
+  //   {pName:'xyz', measureSelected:'COA'},
+  //   {pName:'pqr', measureSelected:'AMR'},
+  //   {pName:'som', measureSelected:'AMM'}
+  // ]
 }
 
 
