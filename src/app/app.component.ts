@@ -181,6 +181,12 @@ export class AppComponent {
     n:'isha',
     ag:22
   }
+
+  //template driven forms (html)
+  // title22 = 'Template Driven Forms'
+
+  //directives
+  title23 = 'Directives'
 }
 
 
