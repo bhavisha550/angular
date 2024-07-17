@@ -106,7 +106,7 @@ export class AppComponent {
 
   //forms
   title12 = 'basic forms.!'
-  getInfo(info:NgForm)
+  getInfo(info: NgForm)
   {
     console.warn(info)
   }
@@ -183,8 +183,8 @@ export class AppComponent {
     ag:22
   }
 
-  //template driven forms (html)
-  // title22 = 'Template Driven Forms'
+  // template driven forms (html)
+  title22 = 'Template Driven Forms'
 
   //directives
   title23 = 'Directives'
